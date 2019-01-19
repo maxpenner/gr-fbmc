@@ -1,0 +1,27 @@
+<block>
+  <name>FBMC P2S</name>
+  <key>fbmc1_fbmc_p2s</key>
+  <category>[FBMC1]</category>
+  <import>import fbmc1</import>
+  <make>fbmc1.fbmc_p2s($veclength, $delayed)</make>
+  <param>
+    <name>Veclength</name>
+    <key>veclength</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Delayed</name>
+    <key>delayed</key>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+    <vlen>$veclength</vlen>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>complex</type>
+    <vlen>$veclength</vlen>
+  </source>
+</block>

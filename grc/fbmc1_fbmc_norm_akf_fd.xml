@@ -1,0 +1,52 @@
+<block>
+  <name>FBMC CCF</name>
+  <key>fbmc1_fbmc_norm_akf_fd</key>
+  <category>[FBMC1]</category>
+  <import>import fbmc1</import>
+  <make>fbmc1.fbmc_norm_akf_fd($veclength, $threshold, $security, $preamble_set, $logical_channels, $dbg_log_chann)</make>
+  <param>
+    <name>Veclength</name>
+    <key>veclength</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Threshold</name>
+    <key>threshold</key>
+    <type>float</type>
+  </param>
+  <param>
+    <name>Security</name>
+    <key>security</key>
+    <type>float</type>
+  </param>
+  <param>
+    <name>Preamble_set</name>
+    <key>preamble_set</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Logical_channels</name>
+    <key>logical_channels</key>
+    <type>int_vector</type>
+  </param>
+  <param>
+    <name>Dbg_log_chann</name>
+    <key>dbg_log_chann</key>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+    <vlen>$veclength</vlen>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>float</type>
+    <vlen>$veclength</vlen>
+  </source>
+  <source>
+    <name>out</name>
+    <type>int</type>
+    <vlen>$veclength</vlen>
+  </source>
+</block>

@@ -1,0 +1,66 @@
+<block>
+  <name>FBMC Payload Generator</name>
+  <key>fbmc1_fbmc_payload_generator</key>
+  <category>[FBMC1]</category>
+  <import>import fbmc1</import>
+  <make>fbmc1.fbmc_payload_generator($mode, $symbols_per_frame, $logical_channels, $video_encoding, $sensor_chunk_len, $sensor_skip)</make>
+  <param>
+    <name>Mode</name>
+    <key>mode</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Symbols_per_frame</name>
+    <key>symbols_per_frame</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Logical_channels</name>
+    <key>logical_channels</key>
+    <type>int_vector</type>
+  </param>
+  <param>
+    <name>Video_encoding</name>
+    <key>video_encoding</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Sensor_chunk_len</name>
+    <key>sensor_chunk_len</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Sensor_skip</name>
+    <key>sensor_skip</key>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>control in</name>
+    <type>message</type>
+    <optional>1</optional>
+  </sink>  
+  <sink>
+    <name>app in</name>
+    <type>message</type>
+    <optional>1</optional>
+  </sink>
+     <sink>
+    <name>ch state in</name>
+    <type>message</type>
+    <optional>1</optional>
+  </sink>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+  </sink>
+  <source>
+    <name>control out</name>
+    <type>message</type>
+    <optional>1</optional>
+  </source>   
+  <source>
+    <name>app out</name>
+    <type>message</type>
+    <optional>1</optional>
+  </source>   
+</block>

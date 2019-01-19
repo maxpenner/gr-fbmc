@@ -1,0 +1,13 @@
+1) Decompress and enter OOT module's folder.
+
+2) mkdir build
+
+3) cd build
+
+4) cmake -DCMAKE_INSTALL_PREFIX=~/prefix/default_inst ../
+
+5) make -j8
+
+6) sudo make install && sudo ldconfig
+
+7) This way everything is installed in the GNURadio version with the selected prefix.

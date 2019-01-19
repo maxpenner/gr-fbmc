@@ -1,0 +1,85 @@
+<block>
+  <name>FBMC Valve TD</name>
+  <key>fbmc1_fbmc_valve_td</key>
+  <category>[FBMC1]</category>
+  <import>import fbmc1</import>
+  <make>fbmc1.fbmc_valve_td($veclength, $filterlength, $symbols_per_frame, $threshold, $plateau, $preamble_set, $sync_type, $sync_len, $sync_symm, $sync_refresh, $init_lock)</make>
+  <param>
+    <name>Veclength</name>
+    <key>veclength</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Filterlength</name>
+    <key>filterlength</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Symbols_per_frame</name>
+    <key>symbols_per_frame</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Threshold</name>
+    <key>threshold</key>
+    <type>float</type>
+  </param>
+  <param>
+    <name>Plateau</name>
+    <key>plateau</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Preamble_set</name>
+    <key>preamble_set</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Sync_type</name>
+    <key>sync_type</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Sync_len</name>
+    <key>sync_len</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Sync_symm</name>
+    <key>sync_symm</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Sync_refresh</name>
+    <key>sync_refresh</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Init_lock</name>
+    <key>init_lock</key>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+  </sink>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+  </sink>
+  <sink>
+    <name>valve in</name>
+    <type>message</type>
+    <optional>1</optional>
+  </sink>    
+  <source>
+    <name>out</name>
+    <type>complex</type>
+    <nports>2</nports>
+  </source>
+  <source>
+    <name>valve out</name>
+    <type>message</type>
+    <optional>1</optional>
+  </source>   
+</block>

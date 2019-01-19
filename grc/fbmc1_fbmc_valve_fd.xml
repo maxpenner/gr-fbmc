@@ -1,0 +1,42 @@
+<block>
+  <name>FBMC Valve FD</name>
+  <key>fbmc1_fbmc_valve_fd</key>
+  <category>[FBMC1]</category>
+  <import>import fbmc1</import>
+  <make>fbmc1.fbmc_valve_fd($veclength, $filterlength, $symbols_per_frame, $logical_channels)</make>
+  <param>
+    <name>Veclength</name>
+    <key>veclength</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Filterlength</name>
+    <key>filterlength</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Symbols_per_frame</name>
+    <key>symbols_per_frame</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Logical_channels</name>
+    <key>logical_channels</key>
+    <type>int_vector</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>int</type>
+    <vlen>$veclength</vlen>
+  </sink>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+    <vlen>$veclength/2</vlen>
+  </sink>
+  <source>
+    <name>frame out</name>
+    <type>message</type>
+    <optional>1</optional>
+  </source>  
+</block>

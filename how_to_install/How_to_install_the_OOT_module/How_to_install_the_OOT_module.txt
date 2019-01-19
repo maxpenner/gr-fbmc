@@ -1,0 +1,23 @@
+1) Enter the OOT module's folder
+
+2) mkdir build
+
+3) cd build
+
+4) cmake ../
+
+5) make -j4
+
+6) sudo make install
+
+7) sudo ldconfig
+
+8) The OOT-module has two hierarchical blocks. These blocks need to be opened in GUNRadio-Companion. Then press "Generate the flow graph". This way GNURadio installs a hierarchical block.
+
+	afb_hier_block.grc
+
+	frame_extractor_hier_block.grc
+
+9) Generate each flow graph from the examples folder you want to use. This is done the same way you installed the hierarchical blocks.
+
+10) Now you should be able to run the examples.

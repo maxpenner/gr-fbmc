@@ -1,0 +1,40 @@
+<block>
+  <name>FBMC ACF td</name>
+  <key>fbmc1_fbmc_norm_akf_td</key>
+  <category>[FBMC1]</category>
+  <import>import fbmc1</import>
+  <make>fbmc1.fbmc_norm_akf_td($nwin, $akf_offset, $security, $flush, $flush_rbo)</make>
+  <param>
+    <name>Nwin</name>
+    <key>nwin</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Akf_offset</name>
+    <key>akf_offset</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Security</name>
+    <key>security</key>
+    <type>float</type>
+  </param>
+  <param>
+    <name>Flush</name>
+    <key>flush</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Flush_rbo</name>
+    <key>flush_rbo</key>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>complex</type>
+  </source>
+</block>

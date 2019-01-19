@@ -1,0 +1,27 @@
+<block>
+  <name>FBMC PPN recv</name>
+  <key>fbmc1_fbmc_ppn_recv</key>
+  <category>[FBMC1]</category>
+  <import>import fbmc1</import>
+  <make>fbmc1.fbmc_ppn_recv($veclength, $filterlength)</make>
+  <param>
+    <name>Veclength</name>
+    <key>veclength</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Filterlength</name>
+    <key>filterlength</key>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+    <vlen>$veclength</vlen>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>complex</type>
+    <vlen>$veclength</vlen>
+  </source>
+</block>

@@ -1,0 +1,36 @@
+<block>
+  <name>FBMC Sample Collector</name>
+  <key>fbmc1_fbmc_sample_collector</key>
+  <category>[FBMC1]</category>
+  <import>import fbmc1</import>
+  <make>fbmc1.fbmc_sample_collector($mode, $sensor_chunk_len, $sensor_pre_push, $sensor_skip)</make>
+  <param>
+    <name>Mode</name>
+    <key>mode</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Sensor_chunk_len</name>
+    <key>sensor_chunk_len</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Sensor_pre_push</name>
+    <key>sensor_pre_push</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Sensor_skip</name>
+    <key>sensor_skip</key>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>scl in</name>
+    <type>message</type>
+    <optional>1</optional>
+  </sink>    
+  <source>
+    <name>out</name>
+    <type>complex</type>
+  </source>
+</block>

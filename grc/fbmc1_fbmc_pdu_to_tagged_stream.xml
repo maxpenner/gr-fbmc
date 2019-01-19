@@ -1,0 +1,30 @@
+<block>
+  <name>FBMC PDU to tagged Stream</name>
+  <key>fbmc1_fbmc_pdu_to_tagged_stream</key>
+  <category>[FBMC1]</category>
+  <import>import fbmc1</import>
+  <make>fbmc1.fbmc_pdu_to_tagged_stream($veclength, $microseconds)</make>
+  <param>
+    <name>Veclength</name>
+    <key>veclength</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Microseconds</name>
+    <key>microseconds</key>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>frame in</name>
+    <type>message</type>
+    <optional>1</optional>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>complex</type>
+  </source>
+  <source>
+    <name>out</name>
+    <type>complex</type>
+  </source>
+</block>

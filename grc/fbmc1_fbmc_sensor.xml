@@ -1,0 +1,52 @@
+<block>
+  <name>FBMC Sensor</name>
+  <key>fbmc1_fbmc_sensor</key>
+  <category>[FBMC1]</category>
+  <import>import fbmc1</import>
+  <make>fbmc1.fbmc_sensor($veclength, $symbols_per_frame, $logical_channels)</make>
+  <param>
+    <name>Veclength</name>
+    <key>veclength</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Symbols_per_frame</name>
+    <key>symbols_per_frame</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Logical_channels</name>
+    <key>logical_channels</key>
+    <type>int_vector</type>
+  </param>
+  <sink>
+    <name>valve in</name>
+    <type>message</type>
+    <optional>1</optional>
+  </sink>  
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+    <vlen>$veclength</vlen>
+  </sink>
+  <sink>
+    <name>control in</name>
+    <type>message</type>
+    <optional>1</optional>
+  </sink>  
+  <source>
+    <name>valve out</name>
+    <type>message</type>
+    <optional>1</optional>
+  </source>  
+  <source>
+    <name>phy out</name>
+    <type>message</type>
+    <optional>1</optional>
+  </source>
+    <source>
+    <name>control out</name>
+    <type>message</type>
+    <optional>1</optional>
+  </source>    
+</block>

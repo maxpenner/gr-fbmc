@@ -1,0 +1,43 @@
+1) sudo apt-get install python-pip
+
+2) sudo pip install pybombs
+
+3) pybombs auto-config
+
+4) pybombs recipes add-defaults
+
+5) FROM HOME DIRECTORY:
+
+	mkdir prefix/
+
+6) FROM HOME DIRECTORY: (time needed: from 11:27 to ~11:50, so 23 minutes)
+
+	pybombs prefix init -a default_inst_alias prefix/default_inst/ -R gnuradio-default
+
+7) FROM HOME DIRECTORY:
+
+	pybombs install apache-thrift
+
+8) gnuradio-config-info --enabled-components
+
+python-support;testing-support;volk;gnuradio-runtime;gr-ctrlport;* thrift;gr-blocks;gnuradio-companion;gr-fec;gr-fft;gr-filter;gr-analog;gr-digital;gr-dtv;gr-atsc;gr-audio;* alsa;* oss;gr-channels;gr-noaa;gr-pager;gr-qtgui;gr-trellis;gr-uhd;gr-utils;gr-vocoder;gr-fcd;gr-wavelet;gr-wxgui;gr-zeromq
+
+9) sudo apt-get install python-networkx
+
+10) sudo apt-get install python-matplotlib
+
+11) Now you have to create the file which enables performance counters:
+
+	sudo gedit .gnuradio/config.conf
+
+	CONTENT:
+
+		[ControlPort]
+		on = True
+		edges_list = True
+
+		[PerfCounters]
+		on = True
+		export = True
+
+12) sudo apt-get install python-pygraphviz

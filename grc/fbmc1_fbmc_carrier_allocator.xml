@@ -1,0 +1,37 @@
+<block>
+  <name>FBMC Carrier Allocator</name>
+  <key>fbmc1_fbmc_carrier_allocator</key>
+  <category>[FBMC1]</category>
+  <import>import fbmc1</import>
+  <make>fbmc1.fbmc_carrier_allocator($veclength, $filterlength, $preamble_set, $microseconds)</make>
+  <param>
+    <name>Veclength</name>
+    <key>veclength</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Filterlength</name>
+    <key>filterlength</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Preamble_set</name>
+    <key>preamble_set</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Microseconds</name>
+    <key>microseconds</key>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>caa in</name>
+    <type>message</type>
+    <optional>1</optional>
+  </sink>  
+  <source>
+    <name>out</name>
+    <type>complex</type>
+    <vlen>$veclength</vlen>
+  </source>
+</block>

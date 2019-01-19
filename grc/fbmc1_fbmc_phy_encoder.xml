@@ -1,0 +1,17 @@
+<block>
+  <name>FBMC PHY Encoder</name>
+  <key>fbmc1_fbmc_phy_encoder</key>
+  <category>[FBMC1]</category>
+  <import>import fbmc1</import>
+  <make>fbmc1.fbmc_phy_encoder()</make>
+  <sink>
+    <name>phy in</name>
+    <type>message</type>
+    <optional>1</optional>
+  </sink>
+  <source>
+    <name>phy out</name>
+    <type>message</type>
+    <optional>1</optional>
+  </source>  
+</block>

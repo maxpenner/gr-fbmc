@@ -1,0 +1,17 @@
+<block>
+  <name>FBMC MAC Encoder</name>
+  <key>fbmc1_fbmc_mac_encoder</key>
+  <category>[FBMC1]</category>
+  <import>import fbmc1</import>
+  <make>fbmc1.fbmc_mac_encoder()</make>
+  <sink>
+    <name>mac in</name>
+    <type>message</type>
+    <optional>1</optional>
+  </sink>
+  <source>
+    <name>mac out</name>
+    <type>message</type>
+    <optional>1</optional>
+  </source>  
+</block>

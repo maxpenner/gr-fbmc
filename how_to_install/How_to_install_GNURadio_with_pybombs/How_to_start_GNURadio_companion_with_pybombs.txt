@@ -1,0 +1,5 @@
+1) cd prefix/default_inst/
+
+2) source ./setup_env.sh
+
+3) gnuradio-companion

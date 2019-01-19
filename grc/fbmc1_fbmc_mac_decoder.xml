@@ -1,0 +1,22 @@
+<block>
+  <name>FBMC MAC Decoder</name>
+  <key>fbmc1_fbmc_mac_decoder</key>
+  <category>[FBMC1]</category>
+  <import>import fbmc1</import>
+  <make>fbmc1.fbmc_mac_decoder($encoding_family)</make>
+  <param>
+    <name>Encoding_family</name>
+    <key>encoding_family</key>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>mac in</name>
+    <type>message</type>
+    <optional>1</optional>
+  </sink>  
+  <source>
+    <name>mac out</name>
+    <type>message</type>
+    <optional>1</optional>
+  </source>      
+</block>

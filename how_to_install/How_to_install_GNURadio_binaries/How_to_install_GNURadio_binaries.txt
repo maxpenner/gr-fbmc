@@ -1,0 +1,7 @@
+1) sudo apt install gnuradio
+
+2) In order to compile the OOT module on a fresh Ubuntu, syou will also have to run:
+
+	sudo apt install cmake
+
+	sudo apt install swig

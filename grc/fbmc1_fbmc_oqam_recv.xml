@@ -1,0 +1,22 @@
+<block>
+  <name>FBMC OQAM recv</name>
+  <key>fbmc1_fbmc_oqam_recv</key>
+  <category>[FBMC1]</category>
+  <import>import fbmc1</import>
+  <make>fbmc1.fbmc_oqam_recv($veclength)</make>
+  <param>
+    <name>Veclength</name>
+    <key>veclength</key>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+    <vlen>$veclength</vlen>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>complex</type>
+    <vlen>$veclength</vlen>
+  </source>
+</block>

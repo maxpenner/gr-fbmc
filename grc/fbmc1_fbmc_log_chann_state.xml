@@ -1,0 +1,37 @@
+<block>
+  <name>FBMC Log Chann State</name>
+  <key>fbmc1_fbmc_log_chann_state</key>
+  <category>[FBMC1]</category>
+  <import>import fbmc1</import>
+  <make>fbmc1.fbmc_log_chann_state($veclength, $fft_length, $avg, $logical_channels)</make>
+  <param>
+    <name>Veclength</name>
+    <key>veclength</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Fft_length</name>
+    <key>fft_length</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Avg</name>
+    <key>avg</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Logical_channels</name>
+    <key>logical_channels</key>
+    <type>int_vector</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+    <vlen>$veclength</vlen>
+  </sink>
+  <source>
+    <name>channel control</name>
+    <type>message</type>
+    <optional>1</optional>
+  </source>    
+</block>

@@ -1,0 +1,47 @@
+<block>
+  <name>Fbmc equ oqam phy</name>
+  <key>fbmc1_fbmc_equ_oqam_phy</key>
+  <category>[FBMC1]</category>
+  <import>import fbmc1</import>
+  <make>fbmc1.fbmc_equ_oqam_phy($veclength, $filterlength, $symbols_per_frame, $preamble_set, $encoding_family, $logical_channels)</make>
+  <param>
+    <name>Veclength</name>
+    <key>veclength</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Filterlength</name>
+    <key>filterlength</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Symbols_per_frame</name>
+    <key>symbols_per_frame</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Preamble_set</name>
+    <key>preamble_set</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Encoding_family</name>
+    <key>encoding_family</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Logical_channels</name>
+    <key>logical_channels</key>
+    <type>int_vector</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+    <vlen>$veclength</vlen>
+  </sink>
+  <source>
+    <name>phy out</name>
+    <type>message</type>
+    <optional>1</optional>
+  </source>  
+</block>
