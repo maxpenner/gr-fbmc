@@ -29,14 +29,14 @@ The system was tested with two USRPs N210 and an Intel i7-4770 at the receiver s
 
 On one computer connected to an USRP N210, start ```examples/transmitter.grc```. The transmitter opens a socket *(127.0.0.1 : 8888)* which can be used to feed a binary video stream to the modulation chain. VLC player can be used for this purpose.
 
-On a second computer also connected to an USRP N210, start ```examples/freq_sync/freq_receiver.grc``` or ```examples/time_sync/time_receiver.grc```. If data arrives at the receiver and decoding is succesfull, the decoded data is output through a socket *(127.0.0.1 : 8889)*.
+On a second computer also connected to an USRP N210, start ```examples/freq_sync/freq_receiver.grc``` or ```examples/time_sync/time_receiver.grc```. If data arrives at the receiver and decoding is successful, the decoded data is output through a socket *(127.0.0.1 : 8889)*.
 
 ## Publications
 A complete description of the algorithms used for frequency synchronization can be found here [https://core.ac.uk/download/pdf/130519465.pdf](https://core.ac.uk/download/pdf/130519465.pdf) **(Analysis of frequency domain frame detection
 and synchronization in OQAM-OFDM systems)**.
 
 ## Troubleshooting
-After installation the simulations should run without further adjustments. If radio hardware is used the N210 should be prefered due to it's precise Crystal Oscillator. Otherwise, too many packets will be lost during transmission to enable a stable video transmission.
+After installation the simulations should run without further adjustments. If radio hardware is used the N210 should be prefered due to its precise Crystal oscillator. Otherwise, too many packets will be lost during transmission to enable a stable video transmission.
 
 If no N210 is available, the packet size at both the transmitter and the receiver must be reduced to not more than 20 symbols. This way the negative influence of the carrier frequency offset is mitigated.
 
