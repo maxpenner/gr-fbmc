@@ -12,7 +12,7 @@ The system was presented at SDRA 2018: [YouTube Video](https://www.youtube.com/w
 ## Installation of gr-fbmc
 ```bash
 git clone https://github.com/maxpenner/gr-fbmc.git
-cd gr-ieee802-11
+cd gr-fbmc1
 mkdir build
 cd build
 cmake ..
