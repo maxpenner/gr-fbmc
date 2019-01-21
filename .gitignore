@@ -1,4 +1,6 @@
 build
 examples/*.py
+examples/time_sync/*.py
+examples/freq_sync/*.py
 *.pyc
 *.pyo

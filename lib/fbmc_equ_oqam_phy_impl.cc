@@ -245,7 +245,7 @@ namespace gr {
 					d_measuredPilotsPhase[3] += arg3;
 					
 					std::cout << "i: " << i << " " << in[i*d_veclength+11] << std::endl;
-					std::cout << "i: " << i << " " << arg(in[i*d_veclength+11])6.283185307f*360.0f << std::endl;
+					std::cout << "i: " << i << " " << arg(in[i*d_veclength+11])*6.283185307f*360.0f << std::endl;
 					std::cout << "i: " << i << " " << arg(in[(i-d_pilot_space_cnt)*d_veclength+11])/6.283185307f*360.0f << std::endl;
 					std::cout << "i: " << i << " " << arg0/6.283185307f*360.0f << std::endl;
 				}
