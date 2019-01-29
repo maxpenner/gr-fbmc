@@ -20,10 +20,9 @@ make
 sudo make install
 sudo ldconfig
 ```
-### Run in Simulation
 ## Usage
 Most parameters for system configuration can be found in ```lib/utils```.
-## Install hierarchical blocks
+### Install hierarchical blocks
 Open the files ```examples/frame_extractor_hier_block.grc``` and ```examples/afb_hier_block.grc``` and compile them. By that you install the hierarchical blocks. Restart GNU Radio companion to see the change.
 ### Run in Simulation
 The system can be started in a simulation environment without using any radio hardware. To start a simulation with a transmitter and a receiver in the same flowgraph, the files ```examples/freq_sync/freq_simulation.grc``` (frequency domain sync) or ```examples/time_sync/time_simulation.grc``` (time domain sync) can be used. To feed data to the transmitter *(127.0.0.1 : 8888)* the file ```examples/udp_source.grc``` is provided.
