@@ -21,11 +21,11 @@
 #ifndef INCLUDED_FBMC_UTILS_FRAME_PARAM_H
 #define INCLUDED_FBMC_UTILS_FRAME_PARAM_H
 
-#define FRAME_SPACER_LENGTH_REDUCE 		1
+#define FRAME_SPACER_LENGTH_REDUCE 		3
 #define FRAME_APPEND_ZEROS_ADDITIONAL 		8		// appended zeros and droppable tail for tagged_stream_to_pdu
 #define FRAME_APPEND_ZEROS_DROP 		4
 
-#define PROTOTYPE_FILTER_PHYDYAS_0_IOTA_1	0		// define filter type
+#define PROTOTYPE_FILTER_PHYDYAS_0_IOTA_1	1		// define filter type
 
 #define FRAME_PREAMBLE_PRESCALE 		1.0f
 
