@@ -10,6 +10,7 @@ This project contains code for a transmitter and receiver which
 The system was presented at SDRA 2018: [YouTube Video](https://www.youtube.com/watch?v=2y5V_O9y9V0)
 
 ## Installation of gr-fbmc
+This OOT-module requires GNU Radio 3.7.x, which is best installed on Ubunut 16.04.X LTS.
 ```bash
 git clone https://github.com/maxpenner/gr-fbmc.git
 cd gr-fbmc
