@@ -35,10 +35,13 @@ On one computer connected to an USRP N210, start ```examples/transmitter.grc```.
 On a second computer also connected to an USRP N210, start ```examples/freq_sync/freq_receiver.grc``` or ```examples/time_sync/time_receiver.grc```. If data arrives at the receiver and decoding is successful, the decoded data is output through a socket *(127.0.0.1 : 8889)*.
 
 ## Publications
+
+An overview of the testbed [https://ieeexplore.ieee.org/document/9606255](https://ieeexplore.ieee.org/document/9606255) **(FBMC Testbed with Frequency Domain Synchronization and Adaptive Bandwidth)**.
+
 A complete description of the algorithms used for frequency synchronization can be found here [https://link.springer.com/article/10.1186/1687-6180-2014-83](https://link.springer.com/article/10.1186/1687-6180-2014-83) **(Analysis of frequency domain frame detection and synchronization in OQAM-OFDM systems)**.
 
 ## Troubleshooting
-After installation the simulations should run without further adjustments. If radio hardware is used the N210 should be prefered due to its precise crystal oscillator. Otherwise, too many packets will be lost during transmission to enable a stable video transmission.
+After installation, the simulations should run without further adjustments. If radio hardware is used the N210 should be prefered due to its precise crystal oscillator. Otherwise, too many packets will be lost during transmission to enable a stable video transmission.
 
 If no N210 is available, the packet size at both the transmitter and the receiver must be reduced to not more than 20 symbols. This way the negative influence of the carrier frequency offset is mitigated.
 
