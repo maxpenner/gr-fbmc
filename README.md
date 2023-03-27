@@ -44,5 +44,3 @@ A complete description of the algorithms used for frequency synchronization can 
 After installation, the simulations should run without further adjustments. If radio hardware is used the N210 should be prefered due to its precise crystal oscillator. Otherwise, too many packets will be lost during transmission to enable a stable video transmission.
 
 If no N210 is available, the packet size at both the transmitter and the receiver must be reduced to not more than 20 symbols. This way the negative influence of the carrier frequency offset is mitigated.
-
-If you have any questions, feel free to contact me *(maxim.penner@ikt.uni-hannover.de)*.
